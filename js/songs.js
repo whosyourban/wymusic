@@ -13,9 +13,8 @@ pageTb.open(tbUrl, function(status) {
            }
            return array
         });
-        console.log(result.length);
         for(var i=0;i<result.length;i++){
-            console.log(result[i]);
+            console.log(result[i].replace('/song?id=',''));
         }
         phantom.exit();
 });
